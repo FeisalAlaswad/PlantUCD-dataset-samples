@@ -1,0 +1,10 @@
+﻿In this software scenario, each bank is defined by a unique code and address. The bank possesses the capability to effectively manage and oversee a network of ATM machines. Each individual ATM machine is under the maintenance of a specific bank. These ATMs are characterized by their physical locations and are closely associated with the bank responsible for their management.
+
+These ATMs are equipped to carry out two primary functions: user identification and financial transactions. Through customer authentication, the ATM establishes the identity of the customer attempting to access its services. Once identified, the ATM facilitates various types of transactions . These transactions are identified by a transaction ID, along with the date of the transaction and its specific type. The ATM transactions  types are withdrawal transaction and Transfer transaction.
+
+Crucially, each transaction is linked to a singular account, emphasizing a direct relationship between transactions and account ownership. Meanwhile, the bank has a diverse customer .each customer distinguished by their name, address, and date of birth. Furthermore, the bank provides its customers with debit cards, each associated with a unique card number and exclusively owned by a specific customer.
+
+Each account owned by individual customers. An account may have multiple debit cards associated with it, allowing for flexible access. Each account is identified by an account number and is categorized into one of two types: saving or checking account. These account types serve different financial purposes, with savings accounts often featuring interest accrual and checking accounts catering to everyday transactions.
+
+These accounts possess the capability to engage in a wide array of transactions, enhancing their utility for customers. Two fundamental transaction types are supported: withdrawals, which involve the deduction of funds from an account, and transfers, which facilitate the movement of funds between accounts.
+

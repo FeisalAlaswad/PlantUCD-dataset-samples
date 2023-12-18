@@ -1,0 +1,52 @@
+@startuml
+class Customer{
+ }
+class Account{
+ }
+Customer "1" -- "1" Account
+
+class Order{
+}
+
+class ShoppingCart{
+}
+Account "1" -- "*" Order
+Account "1" -- "1" ShoppingCart
+class WebBrowser{
+}
+WebBrowser"0..1" -- "1" Customer
+class Customer{
+register()
+}
+class WebBrowser{
+-loginName 
+}
+class WebBrowser{
+-state
+ }
+WebBrowser "1" -- "1" ShoppingCart:linkedTo
+ShoppingCart "1" -- "1" Account: BelongsTo
+
+Account "1" -- "0..*" Order
+
+class Payment{
+}
+Order "1" -- "*" Payment
+class Payment{
+-idPayment
+}
+
+Account "1" -- "0..*" Payment
+
+class Order{
+-statusOrder
+}
+
+
+class LineItem{
+}
+
+Order "1" -- "*" LineItem
+ShoppingCart"1" -- "*" LineItem
+LineItem "*" -- "1" Product
+@enduml
